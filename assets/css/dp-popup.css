@@ -1,0 +1,204 @@
+#dp-popup-modal-wrapper {
+    position: fixed;
+    /*display: none;*/
+    flex-direction: row;
+    /*min-width: 400px;*/
+    /*max-width: 800px;*/
+    width: min(100vw, 360px);
+    height: auto;
+    bottom: -100%;
+    transition: 0.8s ease;
+    /*background: #dfdfda;*/
+    z-index: 999;
+}
+
+.popup-form-wrapper {
+    padding: 50px 20px 20px;
+    background-color: #62BB46;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 60%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='130' height='130' viewBox='0 0 130 130' fill='none'%3E%3Cg opacity='0.2'%3E%3Cpath d='M108.66 60.2216C108.288 60.037 99.9469 55.8529 89.0829 55.25V61.9568C95.5466 62.3752 101.028 64.258 103.738 65.3656V100.13C99.6361 99.1212 93.1973 97.8537 86.5471 97.8537C80.1953 97.8537 73.7316 99.1089 69.555 100.118V87.8981H62.793V100.18C58.7035 99.1582 52.1652 97.8537 45.4032 97.8537C38.9643 97.8537 32.3887 99.1458 28.2122 100.155V65.4763C31.4813 64.3072 38.2807 62.2398 45.4032 62.2398C45.4405 62.2398 45.4901 62.2398 45.5274 62.2398V55.5453C45.4901 55.5453 45.4405 55.5453 45.4032 55.5453C34.0668 55.5453 23.8864 59.9509 23.4638 60.1355L21.4501 61.0215V109.138L25.8629 107.748C25.9623 107.711 36.0432 104.561 45.4032 104.561C55.1609 104.561 64.8067 107.699 64.9062 107.736L65.9503 108.08L67.0069 107.748C67.1063 107.711 77.1872 104.561 86.5471 104.561C96.3048 104.561 105.951 107.699 106.05 107.736L110.5 109.2V61.1692L108.66 60.2216Z' fill='white'/%3E%3Cpath d='M75.3998 72.15H57.8498V79.3H75.3998V72.15Z' fill='white'/%3E%3Cpath d='M75.7188 68.9H57.5435V62.827C52.534 59.8028 49.3999 54.4277 49.3999 48.5997C49.3999 39.3678 57.1282 31.85 66.6312 31.85C76.1216 31.85 83.8499 39.3678 83.8499 48.5997C83.8499 54.44 80.7158 59.815 75.7188 62.827V68.9ZM64.3907 62.2516H68.8716V58.6886L70.8981 57.807C74.6112 56.1908 77.0153 52.5789 77.0153 48.5997C77.0153 43.0287 72.3582 38.4985 66.6312 38.4985C60.9042 38.4985 56.2471 43.0287 56.2471 48.5997C56.2471 52.5667 58.6512 56.1786 62.3643 57.807L64.3782 58.6886V62.2516H64.3907Z' fill='white'/%3E%3Cpath d='M69.5501 19.5H62.4001V26.65H69.5501V19.5Z' fill='white'/%3E%3Cpath d='M82.2974 24.398L77.5322 29.6893L82.5471 34.2054L87.3122 28.9141L82.2974 24.398Z' fill='white'/%3E%3Cpath d='M93.2392 41.3852L86.1577 42.1293L86.8629 48.8407L93.9444 48.0966L93.2392 41.3852Z' fill='white'/%3E%3Cpath d='M49.4231 24.0813L44.4077 28.5967L49.1721 33.8887L54.1876 29.3733L49.4231 24.0813Z' fill='white'/%3E%3Cpath d='M37.8048 41.2232L37.0996 47.9345L44.1811 48.6787L44.8863 41.9673L37.8048 41.2232Z' fill='white'/%3E%3C/g%3E%3C/svg%3E");
+    background-position: left top !important;
+    background-repeat: no-repeat;
+}
+
+.popup-form-wrapper .popup-title h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.popup-form-wrapper .popup-descr p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.popup-form-wrapper .input input {
+    height: 44px;
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    margin-bottom: 20px;
+}
+
+.popup-form-wrapper .field {
+    margin-bottom: 0;
+}
+
+.popup-form-wrapper .hs-form-booleancheckbox a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.popup-form-wrapper .hs-form-booleancheckbox a:hover{
+    color: #ffffff;
+}
+
+.popup-form-wrapper .input input:focus {
+    border-color: #fff;
+}
+
+.popup-form-wrapper .hs-submit .hs-button {
+    /*background-color: #fff;*/
+    /*color: #62BB46;*/
+}
+
+.popup-form-wrapper .input input::placeholder {
+    color: #fff;
+}
+
+.popup-form-wrapper .hs-error-msgs label {
+    color: #fff;
+    background-color: #f00;
+    padding: 3px;
+    margin: 10px 0 -3px 0 !important;
+    display: inline-block;
+    width: max-content;
+}
+
+.popup-form-wrapper .inputs-list {
+    margin-bottom: 20px;
+}
+
+.popup-form-wrapper .inputs-list span {
+    font-size: 12px;
+}
+
+.popup-form-wrapper .hs-input[type=checkbox] {
+    cursor: pointer;
+    width: 20px !important;
+    height: 20px;
+    padding: 0;
+    margin: 0 15px 0 0;
+    line-height: normal;
+    border: none;
+    flex: 0 0 auto;
+}
+
+.popup-form-wrapper .hs-input[type=checkbox]::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    background-color: #62bb46;
+}
+
+.popup-form-wrapper .hs-input[type=checkbox]:checked:after {
+    content: "✔";
+    color: white;
+    font-size: 19px;
+    line-height: 0.9em;
+    padding-left: 2px;
+}
+
+.popup-form-wrapper .hbspt-form .hs-form ul > li > label {
+    margin-bottom: 30px;
+}
+
+#dp-popup-modal-wrapper .dp-popup-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+#dp-popup-modal-wrapper .dp-popup-close:before,
+#dp-popup-modal-wrapper .dp-popup-close:after {
+    content: ' ';
+    width: 4px;
+    height: 100%;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    background-color: #fff;
+}
+#dp-popup-modal-wrapper .dp-popup-close:before {
+    transform: rotate(45deg);
+}
+#dp-popup-modal-wrapper .dp-popup-close:after {
+    transform: rotate(-45deg);
+}
+.sf_button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    background-color: #fff;
+    color: #62BB46;
+    border: 2px solid  rgba(98,187,70,1);
+    text-align: center;
+    transition: all 0.7s ease;
+    width: 100%;
+}
+
+.sf_button:hover {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    background-color: #62BB46;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    transition: all 0.7s ease;
+    width: 100%;
+}
+
+#dp-popup-modal-wrapper .hs-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 1023px) {
+    #dp-popup-modal-wrapper {
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #dp-popup-modal-wrapper {
+        max-width: unset;
+        width: 100vw;
+        flex-direction: column-reverse;
+    }
+    #dp-popup-modal-wrapper .dp-popup-close {
+        top: 30px;
+        right: 40px;
+    }
+}
